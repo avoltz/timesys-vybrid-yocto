@@ -9,7 +9,7 @@ SRC_URI = "git://github.com/Timesys/linux-timesys.git \
            file://0002-mvf.c-Change-console-device-name-to-match-mainline-u.patch \
 "
 
-SRCREV = "dea13473ce0c106fc56af798eefc7196bb150695"
+SRCREV = "9b479b468bda7b6f71f9480971391b323eea2a1a"
 LOCALVERSION = "-3.0-mvf+yocto"
 
 COMPATIBLE_MACHINE = "(vf60)"
