@@ -4,17 +4,18 @@ DESCRIPTION = "Timesys Multicore communication Library"
 LICENSE = "GPL-2.0"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=c49712341497d0b5f2e40c30dff2af9d"
 
-DEPENDS = "kernel-module-mcc"
+DEPENDS = "virtual/kernel kernel-module-mcc"
 
 inherit autotools
 
 SRC_URI = "http://repository.timesys.com/buildsources/l/libmcc/libmcc-${PV}/libmcc-${PV}.tar.bz2 \
-           file://libmcc-cflags.patch \
-           file://libmcc-symlink.patch"
+"
 
-SRC_URI[md5sum] = "adac15d52206be21a4589b2b923af4cc"
-SRC_URI[sha256sum] = "8b4d88f260d4d3a67ee2c16e20112e0584403f350182087daa1cfafeceb16a7f"
+SRC_URI[md5sum] = "e93ce76b4419f0902a848e1769bf22ea"
+SRC_URI[sha256sum] = "3de76c5b1a096021afebfc79ca4e85d05646beb3101edcecf73b82886e7a00c0"
 
 S = "${WORKDIR}/libmcc-${PV}"
+
+CFLAGS += " -I${STAGING_KERNEL_DIR}/include"
 
 COMPATIBLE_MACHINE = "(vf60)"
