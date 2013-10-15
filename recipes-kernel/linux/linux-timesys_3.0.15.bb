@@ -12,6 +12,7 @@ SRC_URI_append_twr-vf65gs10 = " \
 "
 
 SRCREV_twr-vf65gs10 = "9b479b468bda7b6f71f9480971391b323eea2a1a"
+SRCREV_pcl052 = "4225cb2038b7187b4b1cab6570b7e9c526aa72a3"
 LOCALVERSION = "-3.0-mvf+yocto"
 
 COMPATIBLE_MACHINE = "(vf60)"
