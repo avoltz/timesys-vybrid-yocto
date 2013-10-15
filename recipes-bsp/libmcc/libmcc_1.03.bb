@@ -4,7 +4,7 @@ DESCRIPTION = "Timesys Multicore communication Library"
 LICENSE = "GPL-2.0"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=c49712341497d0b5f2e40c30dff2af9d"
 
-RDEPENDS_${PN} = "kernel-module-mcc"
+DEPENDS = "kernel-module-mcc"
 
 inherit autotools
 
